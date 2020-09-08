@@ -1,0 +1,113 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+.heading{
+    width: 100vw;
+    height: 100vh;
+}
+.headingH{
+    z-index: 2;
+    color: white;
+    position: absolute;
+    left: 5%;
+    bottom: 5%;
+    /* height: 100px;
+    width: 400px; */
+}
+.headingC{
+    font-size: 70px;
+}
+.obiWan{
+    position: absolute;
+    left: 2%;
+    z-index: 2;
+    opacity: 0;
+    transition: 500ms ease;
+}
+.headingH:hover .obiWan{
+    opacity: 0.3;
+    z-index: 2;
+}
+/* I can't figure out why this isn't working using the headingH div, even if i give the headingH div a size. it works if i change it to the heading section*/
+.headingImg{
+    background-image: url("../pictures/2007-08-23-the-road-goes-ever-on-&-on-mongolia-1.jpg");
+    background-position: top;
+    position: absolute;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: inherit;
+    width: inherit;
+    
+}
+.navbar{
+   z-index: 10;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.dropdown-item{
+    color: white;
+}
+.navbar-nav{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+#aboutme{
+    padding: 50px;
+    /* background-color: white; */
+    background-color: #bc4123;
+}
+.aboutText{
+    padding-top: 40px;
+    color: white;
+}
+.aboutImg{
+    border-radius: 50%;
+}
+#hobbies{
+    /* background-image: linear-gradient(
+        rgba(71, 156, 131, 0), rgba(112, 128, 114, 1)
+    ); */
+    background-color: slategray;
+    padding: 50px;
+}
+.hobbyPic{
+    height: inherit;
+    width: inherit;
+    border-radius: 10%;
+    transform: rotate(-15deg);
+}
+.hobbyPicAlt{
+    height: inherit;
+    width: inherit;
+    border-radius: 10%;
+    transform: rotate(15deg);
+}
+.hobbyRows{
+    padding: 50px;
+}
+.hobbyText{
+    color: white;
+}
+.hobbyTextAlt{
+    text-align: right;
+    color: white;
+}
+.activePic{
+    opacity: 1;
+}
+/* note inactivePic has to go second cos cascading */
+.inactivePic{
+    opacity: 0;
+}
+.hobbyPics{
+    transition: 1s ;
+}
