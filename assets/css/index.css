@@ -79,7 +79,7 @@ h2{
     /* background-image: linear-gradient(
         rgba(71, 156, 131, 0), rgba(112, 128, 114, 1)
     ); */
-    background-color: slategray;
+    background-color: rgb(19, 28, 51);
     padding: 50px;
 }
 .hobbyPic{
@@ -166,16 +166,18 @@ h2{
 .hobbyDiv:hover .hobbyPicCaptionAlt{
     opacity: 1;
 }
-.activeMorePic{
+.activeStuff{
     transform: translateX(0);
 }
-.inactiveMorePic{
+.inactiveStuff{
     transform: translateX(-100vw);
 }
+.picDiv{
+    transition: 1s ease-in-out;
+}   
 .morePic{
     width: inherit;
     height: inherit;
-    transition: 1s ;
 }
 .morePicCaption{
     display: block;
@@ -194,4 +196,33 @@ h2{
 }
 .picDiv:hover .morePicCaption{
     opacity: 1;
+}
+#contactMe{
+    padding: 50px;
+    background-color: rgb(19, 28, 51);
+    color: white;
+}
+.formInfo{
+    background: white;
+    width: 100%;
+}
+.msg{
+    padding-top: 10px;
+}
+button{
+    border-radius: 10%;
+}
+button:hover{
+    background-color: darkgrey;
+}
+
+.icons{
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.contactMsg{
+    display: flex;
+    justify-content: center;
 }

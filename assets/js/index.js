@@ -37,7 +37,7 @@ for(let i = 0; i < hobbyPics.length; i++){
             // console.log('added active')
         }, (hobbyPics.length)*50);
     }
-    //cant decide if I like it better with it getting removed or just staying
+    // cant decide if I like it better with it getting removed or just staying
     // else{
     //     setTimeout(() => {
     //         hobbyPics[i].classList.remove('activePic');
@@ -46,21 +46,28 @@ for(let i = 0; i < hobbyPics.length; i++){
     //     }, (hobbyPics.length)*50);
     // }
 }
+//this one is for the service box to slide in 
+//the for loop sets out the window height and the service boxes
+// the if function sets out that when the serviceboxes hit the halfway point on the screen, it removes the inactive class and adds the active class
+//the else function does it the opposite way around 
+//the bottom 'return' sets out the speed the service boxes come in. the - i makes sure the individual boxes come in, not all of them at once. 
     for(let i = 0; i < morePics.length; i++){
-        let screenHeight = window.innerHeight;
-        let distanceToTopOfScreen = morePics[i].getBoundingClientRect().top;
-        if(distanceToTopOfScreen <= screenHeight / 2){
-            setTimeout(() => {
-                morePics[i].classList.remove('inactiveMorePic');
-                morePics[i].classList.add('activeMorePic');
-            }, (morePics.length -i)*250);
-        }else{
-            setTimeout(() => {
-                morePics[i].classList.remove('activeMorePic');
-                morePics[i].classList.add('inactiveMorePic');
-                
-            }, (morePics.length - i)*250);
-        }
+    let screenHeight = window.innerHeight;
+    let distanceToTopOfScreen = morePics[i].getBoundingClientRect().top;
+    if(distanceToTopOfScreen <= screenHeight / 2){
+        setTimeout(() => {
+            morePics[i].classList.remove('inactiveStuff');
+            morePics[i].classList.add('activeStuff');
+        }, (morePics.length -i)*250);
     }
-
+    // else{
+    //     setTimeout(() => {
+    //         morePics[i].classList.remove('activeStuff');
+    //         morePics[i].classList.add('inactiveStuff');
+            
+    //     }, (morePics.length - i)*250);
+    // }
+}
 });
+
+

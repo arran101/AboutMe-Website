@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cdb5c88cee.js" crossorigin="anonymous"></script>
     <link rel="Stylesheet" href="./assets/css/index.css">
     <title>Arran Harding | About Me</title>
 </head>
@@ -43,7 +44,7 @@
                   <a class="nav-link" href="#morePicContainer">Pictures</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link " href="#">Contact</a>
+                  <a class="nav-link " href="#contactMe">Contact</a>
                 </li>
               </ul>
             </div>
@@ -213,16 +214,51 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="contactMe">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <!-- put form here -->
+                    <p>Leave me a message!</p>
+                    <form
+                        action="https://formspree.io/xzbjnjbv"
+                        method="POST">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <input class="formInfo" type="text" name="_replyto" placeholder="Your email">
+                        </div>
+                        <div class="col-lg-4">
+                             <input class="formInfo" type="text" name="name" placeholder="Your name">
+                        </div>
+                        <div class="col-lg-4">
+                            <input class="formInfo" type="text" name="subject" placeholder="Subject">
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="col-lg-12 msg">
+                            <textarea class="formInfo"type="text" name="message" placeholder="Your message"></textarea>
+                        </div>
+                    </div>
+                <button type="submit">Send</button>
+                </form>
                 </div>
                 <div class="col-md-6">
+                    <div class="row justify-content-center">
                     <h2>Contact Me</h2>
-                    <p>Leave me a message!</p>
-                    <!-- phone number and email with icons here -->
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6">
+                            <i class="fab fa-whatsapp icons"></i>
+                            <div class="contactMsg">
+                                9552 1762
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <i class="fas fa-at icons"></i>
+                            <div class="contactMsg">
+                                arran101@gmail.com
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
