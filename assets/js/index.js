@@ -37,12 +37,13 @@ for(let i = 0; i < hobbyPics.length; i++){
             // console.log('added active')
         }, (hobbyPics.length)*50);
     }
-    else{
-        setTimeout(() => {
-            hobbyPics[i].classList.remove('activePic');
-            hobbyPics[i].classList.add('inactivePic');
-            // console.log('remove active')
-        }, (hobbyPics.length)*50);
-    }
+    //cant decide if I like it better with it getting removed or just staying
+    // else{
+    //     setTimeout(() => {
+    //         hobbyPics[i].classList.remove('activePic');
+    //         hobbyPics[i].classList.add('inactivePic');
+    //         // console.log('remove active')
+    //     }, (hobbyPics.length)*50);
+    // }
 }
 });
