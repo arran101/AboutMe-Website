@@ -22,6 +22,7 @@ function stickNav(){
 
 //I put this one down here instead of at the top for easier readability
 let hobbyPics = document.getElementsByClassName('hobbyPics')
+let morePics = document.getElementsByClassName('picDiv')
 
 window.addEventListener('scroll', function() {
     let y = window.scrollY;
@@ -29,7 +30,6 @@ window.addEventListener('scroll', function() {
 for(let i = 0; i < hobbyPics.length; i++){
     let screenHeight = window.innerHeight;
     let distanceToTopOfScreen = hobbyPics[i].getBoundingClientRect().top;
-
     if(distanceToTopOfScreen <= screenHeight / 1.1){
         setTimeout(() => {
             hobbyPics[i].classList.remove('inactivePic');
@@ -46,4 +46,21 @@ for(let i = 0; i < hobbyPics.length; i++){
     //     }, (hobbyPics.length)*50);
     // }
 }
+    for(let i = 0; i < morePics.length; i++){
+        let screenHeight = window.innerHeight;
+        let distanceToTopOfScreen = morePics[i].getBoundingClientRect().top;
+        if(distanceToTopOfScreen <= screenHeight / 2){
+            setTimeout(() => {
+                morePics[i].classList.remove('inactiveMorePic');
+                morePics[i].classList.add('activeMorePic');
+            }, (morePics.length -i)*250);
+        }else{
+            setTimeout(() => {
+                morePics[i].classList.remove('activeMorePic');
+                morePics[i].classList.add('inactiveMorePic');
+                
+            }, (morePics.length - i)*250);
+        }
+    }
+
 });

@@ -27,7 +27,7 @@ body{
     opacity: 0;
     transition: 500ms ease;
 }
-.headingH:hover .obiWan{
+.headingH:hover.obiWan{
     opacity: 0.3;
     z-index: 2;
 }
@@ -46,7 +46,6 @@ body{
 .navbar{
    z-index: 10;
 }
-
 .sticky{
     position: fixed;
     top: 0;
@@ -60,6 +59,9 @@ body{
     justify-content: space-around;
     width: 100%;
 }
+h2{
+    padding: 10px;
+}
 #aboutme{
     padding: 50px;
     /* background-color: white; */
@@ -68,6 +70,7 @@ body{
 .aboutText{
     padding-top: 40px;
     color: white;
+    font-size: 20px;
 }
 .aboutImg{
     border-radius: 50%;
@@ -92,14 +95,20 @@ body{
     transform: rotate(15deg);
 }
 .hobbyRows{
-    padding: 50px;
+    padding: 100px;
+}
+/* I notice there is overlap when i make the boxes smaller, im pretty sure due to the rotation of the pictures. perhaps if i pad more it wouldn't overlap as bad, but idk how much padding I want to do*/
+.hobbyDiv{
+    display: block;
 }
 .hobbyText{
     color: white;
+    font-size: 20px;
 }
 .hobbyTextAlt{
     text-align: right;
     color: white;
+    font-size: 20px;
 }
 .activePic{
     opacity: 1;
@@ -110,4 +119,79 @@ body{
 }
 .hobbyPics{
     transition: 1s ;
+}
+.hobbyPicCaption {
+    display: block;
+    position: absolute;
+    width: 93%;
+    height: 100%;
+    bottom: 0;
+    transform: rotate(-15deg);
+    opacity: 0;
+    background-color:rgba(187, 181, 181, 0.5);
+    border-radius: 10%;
+    transition: 400ms ease;
+}
+.hobbyPicCaptionAlt{
+    display: block;
+    position: absolute;
+    width: 93%;
+    height: 100%;
+    bottom: 0;
+    transform: rotate(15deg);
+    opacity: 0;
+    background-color:rgba(187, 181, 181, 0.5);
+    border-radius: 10%;
+    transition: 400ms ease;
+}
+.captionContent{
+    color: white;
+    bottom: 30%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 2vw;
+}
+.captionContentToucan{
+    color: white;
+    bottom: 5%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 1vw;
+}
+.hobbyDiv:hover .hobbyPicCaption{
+    opacity: 1;
+}
+.hobbyDiv:hover .hobbyPicCaptionAlt{
+    opacity: 1;
+}
+.activeMorePic{
+    transform: translateX(0);
+}
+.inactiveMorePic{
+    transform: translateX(-100vw);
+}
+.morePic{
+    width: inherit;
+    height: inherit;
+    transition: 1s ;
+}
+.morePicCaption{
+    display: block;
+    position: absolute;
+    width: 92%;
+    height: 100%;
+    bottom: 0;
+    opacity: 0;
+    background-color:rgba(187, 181, 181, 0.5);
+    transition: 400ms ease;
+}
+#morePicContainer{
+    padding: 50px;
+    background-color: #bc4123;
+    color: white;
+}
+.picDiv:hover .morePicCaption{
+    opacity: 1;
 }
