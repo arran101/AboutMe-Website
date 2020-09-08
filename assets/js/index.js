@@ -60,13 +60,13 @@ for(let i = 0; i < hobbyPics.length; i++){
             morePics[i].classList.add('activeStuff');
         }, (morePics.length -i)*250);
     }
-    // else{
-    //     setTimeout(() => {
-    //         morePics[i].classList.remove('activeStuff');
-    //         morePics[i].classList.add('inactiveStuff');
+    else{
+        setTimeout(() => {
+            morePics[i].classList.remove('activeStuff');
+            morePics[i].classList.add('inactiveStuff');
             
-    //     }, (morePics.length - i)*250);
-    // }
+        }, (morePics.length - i)*250);
+    }
 }
 });
 
