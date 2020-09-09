@@ -158,7 +158,7 @@ h2{
     width: 100%;
     position: absolute;
     text-align: center;
-    font-size: 1vw;
+    font-size: 0.8vw;
 }
 .hobbyDiv:hover .hobbyPicCaption{
     opacity: 1;
@@ -209,10 +209,10 @@ h2{
 .msg{
     padding-top: 10px;
 }
-button{
+.submitB{
     border-radius: 10%;
 }
-button:hover{
+.submitB:hover{
     background-color: darkgrey;
 }
 .icons{
